@@ -5,3 +5,174 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+.fixed-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: auto;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F4F3F4;
+    margin-left: 0;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.burger-item {
+    background-color: gray;
+    border-radius: 50%;
+    height: 3px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+img[alt="slack_logo"] {
+    height: 50px;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    height: 40px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.work-happening {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+}
+
+.work-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.start-button {
+    background-color: #192592;
+    height: 50px;
+    color: white;
+    border-radius: 4%;
+}
+
+.discover-button {
+    background-color: white;
+    height: 50px;
+    color: #192592;
+    border-radius: 4%;
+    width: 100px;
+    margin-bottom: 10px;
+    width: 280px;
+}
+
+.email-form {
+    background-color: white;
+    height: 50px;
+    border-radius: 4%;
+    margin-bottom: 10px;
+    width: 280px;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F3F4;
+}
+
+.try-free {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px;
+    border-style: solid;
+    padding: 5px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: gray;
+}
+
+.final-logo {
+    height: 80px;
+}
+
+.company-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.resources-extras {
+    display: flex;
+    flex-direction: row;
+}
+
+.resources-extras ul {
+    flex-grow: 1;
+}
+.company-product ul {
+    list-style: none;
+}
+.resources-extras ul {
+    list-style: none;
+}
+.company-product li {
+    margin-bottom: 5px;
+}
+.resources-extras li {
+    margin-bottom: 5px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F3F4;;
+}
+
+.bottom ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+.flag-english {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+    .hidden-menu {
+        display: none;
+    }
+}
+
+
