@@ -45,7 +45,8 @@ img[alt="slack_logo"] {
 .logos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .logo {
@@ -91,6 +92,11 @@ img[alt="slack_logo"] {
     width: 280px;
 }
 
+.button-email {
+    display: flex;
+    flex-direction: column;
+}
+
 .middle-container {
     display: flex;
     flex-direction: column;
@@ -125,9 +131,6 @@ img[alt="slack_logo"] {
     flex-direction: row;
 }
 
-.resources-extras ul {
-    flex-grow: 1;
-}
 .company-product ul {
     list-style: none;
 }
@@ -165,13 +168,141 @@ img[alt="slack_logo"] {
 .flag {
     height: 50px;
 }
+.first-three-logos {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-three-logos {
+    display: flex;
+    flex-direction: column;
+}
+
+.try-free-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (min-width: 768px) {
-    .burger-menu {
-        display: none;
-    }
     .hidden-menu {
         display: none;
+    }
+
+    .button-email {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .start-button {
+        background-color: #192592;
+        height: 50px;
+        color: white;
+        border-radius: 4%;
+        width: 80px;
+        height: 55px;
+        margin-left: 10px;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .bottom-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .try-free {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px;
+        border-style: solid;
+        padding: 5px;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-color: gray;
+        justify-content: space-evenly;
+    }
+
+    .try-free-1 > h2 {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 961px) {
+    .logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .first-three-logos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .last-three-logos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F4F3F4;;
+    }
+
+    .bottom ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        width: 50%;
+        padding: 0;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F4F3F4;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1199px) {
+    .burger-menu {
+        display:none;
+    }
+
+    .hidden-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 30vw;
+        justify-content: space-around;
+    }
+
+    .workspace {
+        border-style: solid;
+        border-color: #192592;
+
+        padding: 10px
+
+    }
+    .work-happening {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
     }
 }
 
